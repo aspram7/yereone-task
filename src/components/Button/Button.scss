@@ -1,4 +1,15 @@
-@import "~styles/root";
-
 .app-button {
+  width: fit-content;
+  border: 1px solid #000000;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 50px;
+  border-radius: 62px;
+  color: #000000;
+  font-size: 12px;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
 }

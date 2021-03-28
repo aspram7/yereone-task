@@ -1,0 +1,95 @@
+.app-header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 52px 0;
+  width: 100%;
+
+  .left-side {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+    .left-side-address {
+      .left-side-phone {
+        display: flex;
+
+        .left-side-phone-numbers {
+          margin-left: 20px;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 1px;
+          font-family: "DejaVu Sans", sans-serif;
+        }
+      }
+
+      .left-side-mail {
+        display: flex;
+        align-items: center;
+        margin-top: 9px;
+
+        .left-side-mail-text {
+          margin-left: 20px;
+          font-size: 12px;
+          letter-spacing: 1px;
+          font-family: "DejaVu Sans", sans-serif;
+        }
+      }
+    }
+
+    .left-side-delivery {
+      text-align: center;
+
+      .left-side-delivery-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 6px;
+        font-family: "DejaVu Sans", sans-serif;
+      }
+    }
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+    .right-side-auth,
+    .right-side-bag {
+      text-align: center;
+
+      .right-side-auth-sign,
+      .right-side-bag-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 6px;
+        font-family: "DejaVu Sans", sans-serif;
+
+        .right-side-auth-signup,
+        .right-side-auth-signin {
+          cursor: pointer;
+        }
+      }
+
+      .right-side-bag-icon {
+        position: relative;
+
+        .right-side-bag-count {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background-color: #ff4d41;
+          border-radius: 50%;
+          top: -15px;
+          left: 31px;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 700;
+          font-family: Lato;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

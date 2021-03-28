@@ -1,4 +1,110 @@
-@import "~styles/root";
-
 .app-footer {
+  background-color: #262626;
+
+  .footer-block {
+    padding: 105px 0;
+    display: grid;
+    grid-gap: 43px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+
+    .footer-block-item {
+      color: #ffffff;
+      .footer-info-item {
+        margin: 34px 0;
+
+        & > div {
+          margin: 15px 0;
+          font-size: 12px;
+          font-family: "DejaVu Sans", sans-serif;
+
+          & > span {
+            margin-right: 20px;
+          }
+
+          & > p {
+            display: inline;
+          }
+        }
+      }
+      .footer-block-header {
+        position: relative;
+        padding-bottom: 22px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 15%;
+          height: 2px;
+          background-color: #fd4f48;
+          z-index: 2;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 70%;
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.15);
+          z-index: 1;
+        }
+      }
+
+      .footer-block-content {
+        margin-top: 21px;
+
+        & > p {
+          margin-bottom: 12px;
+          font-size: 12px;
+        }
+      }
+
+      .footer-block-red-text {
+        font-size: 12px;
+        color: #868686;
+        margin-top: 21px;
+        line-height: 20px;
+      }
+      .footer-block-media {
+        margin-top: 19px;
+
+        & > div {
+          position: relative;
+          input {
+            padding: 10px 17px;
+            border-radius: 45px;
+            color: #848484;
+            font-size: 12px;
+            width: 100%;
+            outline: none;
+          }
+
+          button {
+            background-color: #33c0cb;
+            border-radius: 45px;
+            padding: 12px 17px 11px;
+            font-size: 10px;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            position: absolute;
+            right: 0;
+          }
+        }
+
+        .footer-block-social-media {
+          margin-top: 24px;
+          display: flex;
+
+          & > div {
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
 }

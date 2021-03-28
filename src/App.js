@@ -2,13 +2,13 @@ import React from "react";
 
 import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
-import Layout from "./components/Layout/Layout";
+import Section from "containers/Section/Section";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Layout />
+      <Section />
       <Footer />
     </div>
   );

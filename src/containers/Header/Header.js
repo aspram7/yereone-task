@@ -1,9 +1,20 @@
 import React from "react";
 
-import "./Header.scss";
+import Layout from "components/Layout/Layout";
+import HeaderTop from "containers/Header/HeaderTop/HeaderTop";
+import HeaderContent from "containers/Header/HeaderContent/HeaderContent";
+import HeaderMenu from "containers/Header/HeaderMenu/HeaderaMenu";
 
 const Header = () => {
-  return <header className="app-header"></header>;
+  return (
+    <header>
+      <HeaderTop />
+      <Layout>
+        <HeaderContent />
+        <HeaderMenu />
+      </Layout>
+    </header>
+  );
 };
 
 export default Header;

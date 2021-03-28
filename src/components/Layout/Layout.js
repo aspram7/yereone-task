@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Layout.scss";
 
-const Layout = () => {
-  return <div className="app-layout"></div>;
+const Layout = ({ children }) => {
+  return <div className="app-layout">{children}</div>;
 };
 
 export default Layout;

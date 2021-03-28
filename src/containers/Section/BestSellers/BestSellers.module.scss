@@ -1,0 +1,20 @@
+.section {
+  padding-top: 70px;
+  margin-bottom: 25px;
+  h4 {
+    margin-bottom: 70px;
+    font-size: 19px;
+    text-align: center;
+    font-family: "DejaVu Sans";
+  }
+
+  .products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > div {
+      width: 24%;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.app-header-menu {
+  border-top: 0.2px solid #c5c5c5;
+  display: flex;
+
+  .app-header-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .list-item {
+      font-family: "DejaVu Sans", sans-serif;
+      font-size: 13px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s linear;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      & > p {
+        transition: 0.3s;
+      }
+
+      & > p:hover {
+        color: #ff4d41;
+      }
+
+      .list-item-sale {
+        margin-left: 10px;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+
+        .list-item-sale-text {
+          position: absolute;
+          top: 11px;
+          font-size: 9px;
+          left: 4px;
+          color: #ffffff;
+          font-family: "DejaVu Sans", sans-serif;
+        }
+      }
+
+      .list-item-childish-hover {
+        padding: 20px;
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+        top: 100%;
+        box-shadow: 0 5px 10px gray;
+        width: 250px;
+        display: none;
+
+        ul {
+          li {
+            font-family: "DejaVu Sans", sans-serif;
+            font-size: 13px;
+            cursor: pointer;
+            margin: 18px;
+          }
+        }
+      }
+    }
+
+    .childish:hover .list-item-childish-hover {
+      display: block;
+    }
+  }
+
+  .search {
+    margin: 25px 0;
+    cursor: pointer;
+  }
+}

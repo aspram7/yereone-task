@@ -1,0 +1,79 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .teaCup {
+    position: relative;
+    & > div {
+      position: absolute;
+      top: 40%;
+      right: 10%;
+
+      p {
+        font-family: "DejaVu Sans";
+        font-weight: 300;
+        font-size: 18px;
+        color: #262626;
+
+        span {
+          font-weight: 400;
+          font-size: 34px;
+        }
+      }
+
+      .teaCupPrice {
+        font-family: "DejaVu Sans";
+        font-weight: 300;
+        font-size: 13px;
+        color: #262626;
+        margin-top: 19px;
+
+        span {
+          font-weight: 700;
+          font-size: 14px;
+          color: #ff4d41;
+        }
+      }
+    }
+  }
+  .giftLight {
+    position: relative;
+    & > div {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      p {
+        font-family: "DejaVu Sans";
+        font-weight: 300;
+        font-size: 18px;
+        color: #262626;
+
+        span {
+          font-weight: 400;
+          font-size: 32px;
+        }
+      }
+      .giftLightPrice {
+        font-family: "DejaVu Sans";
+        font-weight: 300;
+        font-size: 13px;
+        color: #262626;
+        margin-top: 19px;
+
+        span {
+          font-weight: 700;
+          font-size: 14px;
+          color: #ff4d41;
+        }
+      }
+    }
+  }
+}

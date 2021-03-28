@@ -1,0 +1,70 @@
+.app-product {
+  text-align: center;
+
+  .app-product-image {
+    overflow: hidden;
+    position: relative;
+
+    & > img {
+      width: 100%;
+      object-fit: cover;
+      transition: 0.3s linear;
+    }
+
+    .app-product-image-sign {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      transition: 0.3s linear;
+    }
+
+    .app-product-tab {
+      position: absolute;
+      top: 0;
+      right: 18px;
+      transition: 0.3s linear;
+      display: flex;
+      img:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+  .app-product-image:hover > img {
+    transform: scale(1.1);
+  }
+
+  .product-text {
+    margin: 20px 0 10px;
+    font-family: "DejaVu Sans";
+
+    p {
+      font-size: 13px;
+      margin: 9px 0;
+    }
+
+    .product-price {
+      font-weight: bold;
+
+      .original-price {
+        color: #8a8a8a;
+        text-decoration: line-through;
+      }
+      .sale-price {
+        color: #ff4d41;
+        margin-left: 6px;
+      }
+    }
+
+    .product-star {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+      }
+    }
+  }
+}
