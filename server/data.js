@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 module.exports = [
   {
     id: 0,
